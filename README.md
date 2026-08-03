@@ -102,11 +102,11 @@ it easy to extend and maintain.
 
 ### Power Notes
 
-> ⚠️ **CRITICAL**: Never power servos from the ESP32's 5V pin. 8 servos can
+>  **CRITICAL**: Never power servos from the ESP32's 5V pin. 8 servos can
 > draw 2–4A under load, which will cause brownouts and damage the ESP32.
 > Always use an external 5V power supply connected to the PCA9685's V+ terminal.
 
-> ⚠️ **CRITICAL**: The ESP32, PCA9685, and external servo power supply **must
+>  **CRITICAL**: The ESP32, PCA9685, and external servo power supply **must
 > share a common ground**. Without this, I2C communication will fail and servos
 > will behave erratically.
 
